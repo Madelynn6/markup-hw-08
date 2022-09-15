@@ -428,13 +428,66 @@
               </svg>
             </div>
           </div>
+          <form>
+            <div class="newsletter-flex">
+            <label>
+              <h4 class="join">Zapisz się do newslettera</h4>
+            <input type="email" name="email" placeholder="E-mail" class="newsletter"></input></label>
+          <button type="submit" class="newsletter-button">
+            Zapisz się
+            <svg class="newsletter-icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+          </form>
         </div>
       </div>
     </footer>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-" data-modal>
   <div class="modal">
     <button type="button" class="close-btn" data-modal-close>X</button>
+    <h3 class="modal-text">
+    Zostaw swoje dane w formularzu poniżej</h3>
+
+
+<form>
+  <div class="form-flex1">
+<label for="name" class="label-modal">
+  <svg width="12" height="12" class="form-icon"><use href="./images/icons.svg#person"></use></svg>
+  Imię</label>
+<input type="text" name="name" id="name" class="form-input">
+
+<label for="tel" class="label-modal">
+  <svg width="13" height="13" class="form-icon"><use href="./images/icons.svg#smartphone2"></use></svg>
+  Telefon</label>
+<input type="tel" name="tel" id="tel" class="form-input">
+
+<label for="email" class="label-modal">
+  <svg width="15" height="12" class="form-icon"><use href="./images/icons.svg#email"></use></svg>
+  Email</label>
+<input type="email" name="email" id="email" class="form-input">
+<label class="label-modal">Komentarz</label>
+<textarea name="comment" class="form-textarea" placeholder="Wprowadź tekst"></textarea>
+</div>
+
+
+<div class="form-flex2">
+
+    <label class="checkbox-area">
+<input type="checkbox" name="checkbox">
+    <svg width="16" height="15"><use href="./images/icons.svg#checkmark"></use></svg>
+    <h4 class="text-statue">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></h4></div>
+  </label>
+    <button type="submit" class="submit-button">Wyślij</button>
+
+
+  </form>
+
+
+
+
     </div>
   </div>
 </div>
