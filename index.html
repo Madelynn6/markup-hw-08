@@ -448,45 +448,44 @@
 <div class="backdrop is-" data-modal>
   <div class="modal">
     <button type="button" class="close-btn" data-modal-close>X</button>
-    <h3 class="modal-text">
+    <h3 class="modal-heading">
     Zostaw swoje dane w formularzu poniżej</h3>
 
 
 <form>
-  <div class="form-flex1">
-<label for="name" class="label-modal">
-  <svg width="12" height="12" class="form-icon"><use href="./images/icons.svg#person"></use></svg>
-  Imię</label>
+
+<div class="field-form">
+<label for="name" class="label-modal">Imię</label>
 <input type="text" name="name" id="name" class="form-input">
-
-<label for="tel" class="label-modal">
-  <svg width="13" height="13" class="form-icon"><use href="./images/icons.svg#smartphone2"></use></svg>
-  Telefon</label>
-<input type="tel" name="tel" id="tel" class="form-input">
-
-<label for="email" class="label-modal">
-  <svg width="15" height="12" class="form-icon"><use href="./images/icons.svg#email"></use></svg>
-  Email</label>
-<input type="email" name="email" id="email" class="form-input">
-<label class="label-modal">Komentarz</label>
-<textarea name="comment" class="form-textarea" placeholder="Wprowadź tekst"></textarea>
+<svg width="12" height="12" class="form-icon"><use href="./images/icons.svg#person"></use></svg>
 </div>
 
 
-<div class="form-flex2">
+<div class="field-form">
+<label for="tel" class="label-modal">Telefon</label>
+<input type="tel" name="tel" id="tel" class="form-input">
+<svg width="13" height="13" class="form-icon"><use href="./images/icons.svg#smartphone2"></use></svg>
+</div>
 
-    <label class="checkbox-area">
-<input type="checkbox" name="checkbox">
-    <svg width="16" height="15"><use href="./images/icons.svg#checkmark"></use></svg>
-    <h4 class="text-statue">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></h4></div>
-  </label>
-    <button type="submit" class="submit-button">Wyślij</button>
+<div class="field-form">
+<label for="email" class="label-modal">Email</label>
+<input type="email" name="email" id="email" class="form-input">
+<svg width="15" height="12" class="form-icon"><use href="./images/icons.svg#email"></use></svg>
+</div>
+
+<label class="label-modal">Komentarz</label>
+<textarea name="comment" class="form-textarea" placeholder="Wprowadź tekst"></textarea>
 
 
+<div class="checkbox-area">
+<input type="checkbox" name="checkbox" id="checkbox" class="checkbox-input">
+<label for="checkbox" class="checkbox-label">
+<span>Oświadczam iż akceptuję </span><a href="#">Regulamin</a><span> i </span><a href="#">Politykę Prywatności.</a>
+</label>
+
+<button type="submit" class="submit-button">Wyślij</button>
+</div>
   </form>
-
-
-
 
     </div>
   </div>
