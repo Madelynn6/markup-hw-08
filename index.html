@@ -456,20 +456,20 @@
 
 <div class="field-form">
 <label for="name" class="label-modal">Imię</label>
-<input type="text" name="name" id="name" class="form-input">
+<input type="text" name="name" id="name" class="form-input" required>
 <svg width="12" height="12" class="form-icon"><use href="./images/icons.svg#person"></use></svg>
 </div>
 
 
 <div class="field-form">
 <label for="tel" class="label-modal">Telefon</label>
-<input type="tel" name="tel" id="tel" class="form-input">
+<input type="tel" name="tel" id="tel" class="form-input" required pattern="[0-9]{3}[0-9]{3}[0-9]{3}" title="Format 123-456-789">
 <svg width="13" height="13" class="form-icon"><use href="./images/icons.svg#smartphone2"></use></svg>
 </div>
 
 <div class="field-form">
 <label for="email" class="label-modal">Email</label>
-<input type="email" name="email" id="email" class="form-input">
+<input type="email" name="email" id="email" class="form-input" required>
 <svg width="15" height="12" class="form-icon"><use href="./images/icons.svg#email"></use></svg>
 </div>
 
@@ -478,7 +478,7 @@
 
 
 <div class="checkbox-area">
-<input type="checkbox" name="checkbox" id="checkbox" class="checkbox-input">
+<input type="checkbox" name="checkbox" id="checkbox" class="checkbox-input" required>
 <label for="checkbox" class="checkbox-label">
 <span>Oświadczam iż akceptuję </span><a href="#">Regulamin</a><span> i </span><a href="#">Politykę Prywatności.</a>
 </label>
