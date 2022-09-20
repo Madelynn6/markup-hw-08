@@ -34,13 +34,9 @@ img {
   display: block;
 }
 
-/************************ NAV *****************************/
+/************************ HEADER *****************************/
 
-.header-border {
-  border-bottom: 1px solid var(--border);
-}
-
-.page-header {
+.header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -48,22 +44,7 @@ img {
   gap: 93px;
   padding: 24px 0px 25px;
   margin: 0px 227px 0px 215px;
-}
-
-.menu-nav {
-  display: flex;
-  list-style: none;
-  gap: 46px;
-  margin: 0;
-  padding-left: 0;
-}
-
-.menu-contact {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  padding: 0 0 0 252px;
-  margin: 0;
+  border-bottom: 1px solid var(--border);
 }
 
 .logo {
@@ -76,11 +57,19 @@ img {
   letter-spacing: 0.03em;
 }
 
-.logo-recolor {
+.logo--black {
   color: var(--black);
 }
 
-.links {
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 46px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav__item {
   font-weight: 500;
   font-size: 14px;
   color: var(--font-color-2);
@@ -89,18 +78,18 @@ img {
   letter-spacing: 0.02em;
 }
 
-.links:hover,
-.links:focus {
+.nav__item:hover,
+.nav__item:focus {
   color: var(--selection-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.links-current {
+.nav__item--current {
   position: relative;
   color: var(--selection-color);
 }
 
-.links-current::after {
+.nav__item--current::after {
   position: absolute;
   display: block;
   top: 45px;
@@ -112,7 +101,15 @@ img {
   border-radius: 2px;
 }
 
-.links-mailtel {
+.contact {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0 0 0 252px;
+  margin: 0;
+}
+
+.contact__item {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -125,8 +122,8 @@ img {
   gap: 10px;
 }
 
-.links-mailtel:hover,
-.links-mailtel:focus {
+.contact__item:hover,
+.contact__item:focus {
   color: var(--selection-color);
   fill: var(--selection-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -139,14 +136,11 @@ img {
   width: 100%;
   text-align: center;
   padding: 200px 0 200px;
-}
-
-.background-img {
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
     url('../images/header.jpg');
 }
 
-.heading-text {
+.heading__text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -158,7 +152,7 @@ img {
   margin: 0;
 }
 
-.button-heading {
+.heading__button {
   background-color: var(--selection-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -174,22 +168,16 @@ img {
   border: none;
 }
 
-.button-heading:hover {
+.heading__button:hover {
   background-color: var(--bg-color-1);
   color: var(--font-color-2);
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/************************ LOREM IPSUM *****************************/
+/************************ DESCRIPTION *****************************/
 
-.icon-description {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.group-1 {
+.description__icon {
   text-align: center;
   margin: 0;
   padding-top: 25px;
@@ -198,7 +186,7 @@ img {
   background-color: var(--white-almost);
 }
 
-.lorem-ipsum {
+.description__list {
   display: flex;
   gap: 30px;
   list-style: none;
@@ -207,7 +195,7 @@ img {
   justify-content: center;
 }
 
-.description-heading {
+.description__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -217,7 +205,7 @@ img {
   margin: 30px 0 0;
 }
 
-.description-text {
+.description__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -228,7 +216,7 @@ img {
 
 /************************ WHAT WE DO ***********************/
 
-.secondary-heading {
+.section__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -238,11 +226,20 @@ img {
   margin: 0;
 }
 
-.relative {
+.our-job__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 50px 0 0;
+  gap: 30px;
+  justify-content: center;
+}
+
+.our-job__item {
   position: relative;
 }
 
-.text-whatwedo {
+.our-job__text {
   position: absolute;
   bottom: 0;
   width: 370px;
@@ -259,18 +256,9 @@ img {
   margin: 0;
 }
 
-.photo-box {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 50px 0 0;
-  gap: 30px;
-  justify-content: center;
-}
-
 /************************ OUR-TEAM *****************************/
 
-.our-team-bg {
+.our-team__bg {
   background: var(--bg-color-1);
 }
 
@@ -283,7 +271,7 @@ img {
   margin: 0;
 }
 
-.card-team {
+.our-team__item {
   align-items: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -291,7 +279,7 @@ img {
   background: var(--white);
 }
 
-.person-name {
+.our-team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -302,7 +290,7 @@ img {
   text-align: center;
 }
 
-.person-position {
+.our-team__position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -312,7 +300,7 @@ img {
   text-align: center;
 }
 
-.media-icons {
+.our-team__icons {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -320,7 +308,7 @@ img {
   padding-bottom: 30px;
 }
 
-.social {
+.our-team__icon {
   width: 44px;
   height: 44px;
   /* background-color: var(--white); */
@@ -328,36 +316,25 @@ img {
   fill: var(--social-icon);
 }
 
-.social:hover,
-.social:focus {
+.our-team__icon:hover,
+.our-team__icon:focus {
   fill: var(--white-almost);
   background-color: var(--selection-color);
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/***************** OUR CUSTOMERS *****************/
+/*********************** OUR CUSTOMERS ***********************/
 
 .our-customers {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--font-color-2);
-  padding-bottom: 50px;
-  margin: 0;
-}
-
-.customers-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-top: 50px;
 }
 
-.customers {
+.our-customers__icon {
   width: 170px;
   height: 92px;
   align-items: center;
@@ -366,8 +343,8 @@ img {
   fill: var(--social-icon);
 }
 
-.customers:hover,
-.customers:focus {
+.our-customers__icon:hover,
+.our-customers__icon:focus {
   fill: var(--selection-color);
   border: 1px solid var(--selection-color);
   cursor: pointer;
@@ -376,7 +353,7 @@ img {
 
 /************************ FOOTER *****************************/
 
-.footer-bg {
+.footer {
   background-color: var(--bg-color-2);
   width: 100%;
   padding: 60px 0;
@@ -387,11 +364,11 @@ img {
   gap: 70px;
 }
 
-.logo-recolor-bottom {
+.logo--white {
   color: var(--white);
 }
 
-.address {
+.footer__address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -400,12 +377,12 @@ img {
   padding: 20px 0 9px;
 }
 
-.contact-bottom {
+.footer__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.links-bottom {
+.footer__item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -413,13 +390,13 @@ img {
   text-decoration: none;
 }
 
-.links-bottom:hover,
-.links-bottom:focus {
+.footer__item:hover,
+.footer__item:focus {
   color: var(--selection-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join {
+.footer__title {
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
@@ -429,7 +406,15 @@ img {
   letter-spacing: 0.03em;
 }
 
-.social-footer {
+.footer__icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.footer__icon {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -445,12 +430,12 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter-flex {
+.newsletter {
   display: flex;
   gap: 12px;
 }
 
-.newsletter {
+.newsletter__input {
   width: 358px;
   height: 50px;
   font-size: 16px;
@@ -464,7 +449,7 @@ img {
   padding-left: 16px;
 }
 
-.newsletter-button {
+.newsletter__button {
   background-color: var(--selection-color);
   width: 200px;
   height: 50px;
@@ -485,13 +470,13 @@ img {
   border-radius: 4px;
 }
 
-.newsletter-button:hover,
-.newsletter-button:focus {
+.newsletter__button:hover,
+.newsletter__button:focus {
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter-icon {
+.newsletter__icon {
   fill: var(--white);
   width: 24px;
   height: 24px;
