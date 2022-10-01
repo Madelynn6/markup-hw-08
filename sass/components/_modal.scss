@@ -1,0 +1,172 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: getColor('black-0.2');
+  width: 100%;
+  height: 100%;
+  transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+  background-color: getColor('white');
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px getColor('black-0.12'), 0px 1px 1px getColor('black-0.14'),
+    0px 2px 1px getColor('black-0.2');
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  &__close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: getColor('white');
+    color: getColor('black');
+    border-radius: 50%;
+    top: 8px;
+    right: 8px;
+    border: 1px solid getColor('black-0.1');
+    cursor: pointer;
+  }
+
+  &__heading {
+    font-weight: getFw('bold-700');
+    font-size: getFs('normal-20');
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: getColor('font-color-2');
+    margin: 0 0 12px 0;
+  }
+}
+
+/****** MODAL FORM ******/
+
+.form__field {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.form__label {
+  font-size: getFs('small-12');
+  letter-spacing: 0.01em;
+  color: getColor('font-color-1');
+  position: relative;
+  margin: 0;
+}
+
+.form__input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid getColor('transparent-black');
+  border-radius: 4px;
+  font-size: getFs('small-12');
+  letter-spacing: 0.01em;
+  padding: 0;
+  padding-left: 42px;
+}
+
+.form__input:focus {
+  border-color: getColor('selection-color');
+  outline: none;
+}
+
+.form__input:focus + .form__icon {
+  fill: getColor('selection-color');
+}
+
+.form__icon {
+  fill: getColor('font-color-2');
+  position: absolute;
+  top: 33px;
+  left: 12px;
+}
+
+.form__textarea {
+  width: 448px;
+  height: 120px;
+  border: 1px solid getColor('transparent-black');
+  border-radius: 4px;
+  resize: none;
+  display: block;
+  padding: 16px 12px;
+  font-size: getFs('small-12');
+  letter-spacing: 0.01em;
+  margin-top: 4px;
+
+  &::placeholder {
+    font-size: getFs('small-12');
+    letter-spacing: 0.01em;
+    color: getColor('transparent-form');
+  }
+
+  &:focus {
+    border-color: getColor('selection-color');
+    outline: none;
+  }
+}
+/*****TERMS AND CONDITIONS*****/
+
+.form__terms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0;
+}
+
+.form__checkbox {
+  appearance: none;
+}
+
+.form__accept {
+  font-size: getFs('small-14');
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: getColor('font-color-1');
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: pre;
+}
+
+.form__accept::before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid getColor('font-color-2');
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.form__checkbox:checked + .form__accept::before {
+  border: none;
+  border-radius: 2px;
+  background-color: getColor('selection-color');
+  background-image: url('../images/checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__accept a {
+  color: getColor('selection-color');
+}

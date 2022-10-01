@@ -1,0 +1,16 @@
+.logo {
+  font-family: getFf('Raleway');
+  font-weight: getFw('bold-700');
+  font-size: getFs('big-26');
+  color: getColor('selection-color');
+  text-decoration: none;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &--black {
+    color: getColor('black');
+  }
+  &--white {
+    color: getColor('white');
+  }
+}

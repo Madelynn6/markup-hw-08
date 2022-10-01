@@ -1,0 +1,177 @@
+%box {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/************************ HEADING *****************************/
+.heading {
+  background-color: getColor('bg-color-2');
+  width: 100%;
+  text-align: center;
+  padding: 200px 0 200px;
+  background-image: linear-gradient(
+      0deg,
+      getColor('transparent-img') 0%,
+      getColor('transparent-img') 100%
+    ),
+    url('../images/header.jpg');
+
+  &__text {
+    font-weight: getFw('bold-900');
+    font-size: getFs('big-44');
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: getColor('white');
+    padding-bottom: 30px;
+    margin: 0;
+  }
+}
+/************************ SECTION HEADING *****************************/
+
+.section__heading {
+  font-weight: getFw('bold-700');
+  font-size: getFs('big-36');
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor('font-color-2');
+  margin: 0;
+}
+
+/************************ DESCRIPTION *****************************/
+
+.description {
+  @extend %box;
+  padding: 0 0 94px;
+  margin: 0 15px;
+
+  &__icon {
+    text-align: center;
+    margin: 0;
+    padding-top: 25px;
+    width: 270px;
+    height: 120px;
+    background-color: getColor('white-almost');
+  }
+  &__heading {
+    font-weight: getFw('bold-700');
+    font-size: getFs('small-14');
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: getColor('font-color-2');
+    text-transform: uppercase;
+    margin: 30px 0 0;
+  }
+
+  &__text {
+    font-size: getFs('small-14');
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor('font-color-1');
+    margin: 0;
+    padding: 10px 0 0;
+  }
+}
+/************************ WHAT WE DO ***********************/
+
+.our-job__list {
+  @extend %box;
+  margin: 0;
+  padding: 50px 0 0;
+}
+
+.our-job__item {
+  position: relative;
+}
+
+.our-job__text {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: getColor('transparent-job');
+  font-weight: getFw('bold-700');
+  font-size: getFs('small-14');
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: getColor('white');
+  padding-top: 27px;
+  margin: 0;
+}
+/************************ OUR-TEAM *****************************/
+
+.our-team {
+  @extend %box;
+  padding: 50px 0 0 0;
+  margin: 0;
+
+  &__bg {
+    background: getColor('bg-color-1');
+  }
+
+  &__item {
+    align-items: center;
+    box-shadow: 0px 1px 3px getColor('black-0.12'), 0px 1px 1px getColor('black-0.14'),
+      0px 2px 1px getColor('black-0.2');
+    border-radius: 0px 0px 4px 4px;
+    background: getColor('white');
+  }
+
+  &__name {
+    font-weight: getFw('normal-500');
+    font-size: getFs('normal-16');
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: getColor('font-color-2');
+    margin: 0;
+    padding: 30px 0 10px;
+    text-align: center;
+  }
+
+  &__position {
+    font-size: getFs('normal-16');
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: getColor('font-color-1');
+    padding: 0 0 16px 0;
+    margin: 0;
+    text-align: center;
+  }
+  &__icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+}
+
+/*********************** OUR CUSTOMERS ***********************/
+
+.our-customers {
+  @extend %box;
+  align-items: center;
+  margin-top: 50px;
+
+  &__icon {
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    border: 1px solid getColor('social-icon');
+    border-radius: 4px;
+    fill: getColor('social-icon');
+
+    &:hover,
+    &:focus {
+      fill: getColor('selection-color');
+      border: 1px solid getColor('selection-color');
+      cursor: pointer;
+      @extend %transition;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+/* 
 :root {
   --font-color-1: #757575;
   --font-color-2: #212121;
@@ -10,7 +11,7 @@
   --black: #000000;
   --border: #ececec;
   --social-icon: #afb1b8;
-}
+} 
 
 body {
   color: var(--font-color-1);
@@ -33,9 +34,10 @@ body {
 img {
   display: block;
 }
-
+*/
 /************************ HEADER *****************************/
 
+/*
 .header {
   display: flex;
   flex-direction: row;
@@ -47,7 +49,7 @@ img {
   border-bottom: 1px solid var(--border);
 }
 
-.logo {
+ .logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -101,6 +103,8 @@ img {
   border-radius: 2px;
 }
 
+
+
 .contact {
   display: flex;
   list-style: none;
@@ -129,9 +133,11 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+*/
+
 /************************ HEADING *****************************/
 
-.heading {
+/* .heading {
   background-color: var(--bg-color-2);
   width: 100%;
   text-align: center;
@@ -173,11 +179,11 @@ img {
   color: var(--font-color-2);
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /************************ DESCRIPTION *****************************/
 
-.description__icon {
+/* .description__icon {
   text-align: center;
   margin: 0;
   padding-top: 25px;
@@ -212,11 +218,11 @@ img {
   color: var(--font-color-1);
   margin: 0;
   padding: 10px 0 0;
-}
+} */
 
 /************************ WHAT WE DO ***********************/
 
-.section__heading {
+/* .section__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -224,9 +230,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--font-color-2);
   margin: 0;
-}
+} */
 
-.our-job__list {
+/* .our-job__list {
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -254,11 +260,11 @@ img {
   color: var(--white);
   padding-top: 27px;
   margin: 0;
-}
+} */
 
 /************************ OUR-TEAM *****************************/
 
-.our-team__bg {
+/* .our-team__bg {
   background: var(--bg-color-1);
 }
 
@@ -299,19 +305,18 @@ img {
   margin: 0;
   text-align: center;
 }
-
 .our-team__icons {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
-}
+} */
 
+/* 
 .our-team__icon {
   width: 44px;
   height: 44px;
-  /* background-color: var(--white); */
   border-radius: 50%;
   fill: var(--social-icon);
 }
@@ -322,11 +327,11 @@ img {
   background-color: var(--selection-color);
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /*********************** OUR CUSTOMERS ***********************/
 
-.our-customers {
+/* .our-customers {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,10 +354,11 @@ img {
   border: 1px solid var(--selection-color);
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /************************ FOOTER *****************************/
 
+/*
 .footer {
   background-color: var(--bg-color-2);
   width: 100%;
@@ -364,9 +370,9 @@ img {
   gap: 70px;
 }
 
-.logo--white {
+/* .logo--white {
   color: var(--white);
-}
+} 
 
 .footer__address {
   font-size: 14px;
@@ -481,10 +487,10 @@ img {
   width: 24px;
   height: 24px;
 }
-
+*/
 /************************ PORTFOLIO *****************************/
 
-.filter__list {
+/* .filter__list {
   display: flex;
   padding: 0;
   list-style-type: none;
@@ -585,10 +591,10 @@ img {
 
 .gallery__item:hover .gallery__overlay {
   transform: translateY(0);
-}
+} */
 
 /******************** MODAL ***********************/
-.backdrop {
+/* .backdrop {
   position: fixed;
   left: 0;
   top: 0;
@@ -641,11 +647,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--font-color-2);
   margin: 0 0 12px 0;
-}
+} */
 
 /****** MODAL FORM ******/
 
-.form__field {
+/* .form__field {
   position: relative;
   padding: 0;
   margin: 0;
@@ -653,7 +659,6 @@ img {
 }
 
 .form__label {
-  font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.01em;
   color: var(--font-color-1);
@@ -710,11 +715,11 @@ img {
 .form__textarea:focus {
   border-color: var(--selection-color);
   outline: none;
-}
+} */
 
 /*****TERMS AND CONDITIONS*****/
 
-.form__terms {
+/* .form__terms {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -731,7 +736,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--font-color-1);
-  font-weight: 400;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -762,8 +766,9 @@ img {
 
 .checkbox-label a {
   color: var(--selection-color);
-}
+} */
 
+/* 
 .form__button {
   background-color: var(--selection-color);
   width: 200px;
@@ -783,4 +788,4 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-}
+} */

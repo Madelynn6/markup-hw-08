@@ -1,0 +1,30 @@
+.icons--white {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: getColor('social-icon');
+
+  &:hover,
+  &:focus {
+    fill: getColor('white-almost');
+    background-color: getColor('selection-color');
+    cursor: pointer;
+    @extend %transition;
+  }
+}
+
+.icons--black {
+  width: 44px;
+  height: 44px;
+  background-color: getColor('white-0.1');
+  fill: getColor('white');
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    fill: getColor('white');
+    background-color: getColor('selection-color');
+    cursor: pointer;
+    @extend %transition;
+  }
+}

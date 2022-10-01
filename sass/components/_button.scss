@@ -1,0 +1,74 @@
+%button {
+  background-color: getColor('selection-color');
+  box-shadow: 0px 4px 4px getColor('black-0.15');
+  border-radius: 4px;
+  font-weight: getFw('bold-700');
+  font-size: getFs('normal-16');
+  line-height: 1.88;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 0.06em;
+  color: getColor('white');
+  border: none;
+  cursor: pointer;
+}
+
+.heading__button {
+  @extend %button;
+  text-align: center;
+
+  &:hover {
+    @extend %button;
+  }
+}
+
+.newsletter__button {
+  @extend %button;
+  font-weight: getFw('bold-700');
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    @extend %transition;
+  }
+}
+
+.form__button {
+  @extend %button;
+  font-weight: getFw('bold-700');
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+.filter__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor('font-color-2');
+  background-color: getColor('white-almost');
+  border-radius: 4px;
+  width: 121px;
+  height: 38px;
+  border-style: none;
+
+  &:hover {
+    color: getColor('white');
+    background-color: getColor('selection-color');
+    border-radius: 4px;
+    cursor: pointer;
+    @extend %transition;
+  }
+}
