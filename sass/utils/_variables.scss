@@ -27,6 +27,7 @@ $colors: (
   'transparent-black': rgba(33, 33, 33, 0.2),
   'transparent-form': rgba(117, 117, 117, 0.5),
   'transparent-gallery': rgba(33, 150, 243, 0.9),
+  'menu-border': rgba(33, 33, 33, 0.2),
 );
 
 @function getColor($key) {
@@ -58,8 +59,12 @@ $font-size: (
   'normal-16': 16px,
   'normal-18': 18px,
   'normal-20': 20px,
+  'big-24': 24px,
   'big-26': 26px,
+  'big-28': 28px,
+  'big-34': 34px,
   'big-36': 36px,
+  'big-40': 40px,
   'big-44': 44px,
 );
 
