@@ -413,79 +413,85 @@
       </div>
     </footer>
 
-    <!-- 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-btn" data-modal-close>X</button>
+        <h3 class="modal__heading">Zostaw swoje dane w formularzu poniżej</h3>
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="modal__close-btn" data-modal-close>X</button>
-    <h3 class="modal__heading">
-    Zostaw swoje dane w formularzu poniżej</h3>
+        <form>
+          <div class="form__field">
+            <label for="name" class="form__label">Imię</label>
+            <input type="text" name="name" id="name" class="form__input" required />
+            <svg width="12" height="12" class="form__icon">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </div>
 
+          <div class="form__field">
+            <label for="tel" class="form__label">Telefon</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              class="form__input"
+              required
+              pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+              title="Format 123-456-789"
+            />
+            <svg width="13" height="13" class="form__icon">
+              <use href="./images/icons.svg#smartphone2"></use>
+            </svg>
+          </div>
 
-<form>
+          <div class="form__field">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" name="email" id="email" class="form__input" required />
+            <svg width="15" height="12" class="form__icon">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </div>
 
-<div class="form__field">
-<label for="name" class="form__label">Imię</label>
-<input type="text" name="name" id="name" class="form__input" required>
-<svg width="12" height="12" class="form__icon"><use href="./images/icons.svg#person"></use></svg>
-</div>
+          <label class="form__label">Komentarz</label>
+          <textarea name="comment" class="form__textarea" placeholder="Wprowadź tekst"></textarea>
 
+          <div class="form__terms">
+            <input type="checkbox" name="checkbox" id="checkbox" class="form__checkbox" required />
+            <label for="checkbox" class="form__accept">
+              <span>Oświadczam iż akceptuję </span><a href="#">Regulamin</a><span> i </span
+              ><a href="#">Politykę Prywatności.</a>
+            </label>
 
-<div class="form__field">
-<label for="tel" class="form__label">Telefon</label>
-<input type="tel" name="tel" id="tel" class="form__input" required pattern="[0-9]{3}[0-9]{3}[0-9]{3}" title="Format 123-456-789">
-<svg width="13" height="13" class="form__icon"><use href="./images/icons.svg#smartphone2"></use></svg>
-</div>
-
-<div class="form__field">
-<label for="email" class="form__label">Email</label>
-<input type="email" name="email" id="email" class="form__input" required>
-<svg width="15" height="12" class="form__icon"><use href="./images/icons.svg#email"></use></svg>
-</div>
-
-<label class="form__label">Komentarz</label>
-<textarea name="comment" class="form__textarea" placeholder="Wprowadź tekst"></textarea>
-
-
-<div class="form__terms">
-<input type="checkbox" name="checkbox" id="checkbox" class="form__checkbox" required>
-<label for="checkbox" class="form__accept">
-<span>Oświadczam iż akceptuję </span><a href="#">Regulamin</a><span> i </span><a href="#">Politykę Prywatności.</a>
-</label>
-
-<button type="submit" class="form__button">Wyślij</button>
-</div>
-  </form>
-
+            <button type="submit" class="form__button">Wyślij</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-</div>
-
-    -->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg width="18.67" height="18.67"><use href="./images/icons.svg#close-icon"></use></svg>
-      </button>
-      <ul class="menu__nav">
-        <li><a class="menu__item" href="./index.html">Agencja</a></li>
-        <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
-        <li><a class="menu__item" href="./kontakt.html">Kontakt</a></li>
-      </ul>
+      <div>
+        <button class="menu-toggle js-close-menu">
+          <svg width="18.67" height="18.67"><use href="./images/icons.svg#close-icon"></use></svg>
+        </button>
+        <ul class="menu__nav">
+          <li><a class="menu__item" href="./index.html">Agencja</a></li>
+          <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="menu__item" href="./kontakt.html">Kontakt</a></li>
+        </ul>
 
-      <ul class="menu__contact">
-        <li><a class="menu__tel" href="tel:+48111111111">+48 111 111 111</a></li>
-        <li><a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      </ul>
+        <ul class="menu__contact">
+          <li><a class="menu__tel" href="tel:+48111111111">+48 111 111 111</a></li>
+          <li><a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
 
-      <ul class="menu__social">
-        <li class="menu__social-item"><a class="menu__social-link" href="">Instagram</a></li>
-        <li class="menu__social-item"><a class="menu__social-link" href="">Twitter</a></li>
-        <li class="menu__social-item"><a class="menu__social-link" href="">Facebook</a></li>
-        <li class="menu__social-item"><a class="menu__social-link" href="">LinkedIn</a></li>
-      </ul>
+        <ul class="menu__social">
+          <li class="menu__social-item"><a class="menu__social-link" href="">Instagram</a></li>
+          <li class="menu__social-item"><a class="menu__social-link" href="">Twitter</a></li>
+          <li class="menu__social-item"><a class="menu__social-link" href="">Facebook</a></li>
+          <li class="menu__social-item"><a class="menu__social-link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
-    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
