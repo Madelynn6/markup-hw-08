@@ -173,3 +173,10 @@
 .form__accept a {
   color: getColor('selection-color');
 }
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}

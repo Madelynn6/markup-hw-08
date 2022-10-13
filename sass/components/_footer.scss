@@ -33,14 +33,13 @@
   &__item {
     font-size: getFs('small-14');
     color: getColor('white-0.6');
-    line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
 
     &:hover,
     &:focus {
       color: getColor('selection-color');
-      @extend %transition;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
@@ -63,7 +62,6 @@
   }
 }
 
-/*CZEMU INPUT JEST TAKI WĄSKI??*/
 .newsletter {
   display: flex;
   gap: 20px;
@@ -71,6 +69,13 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  &__sign {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 
   &__input {
     height: 50px;
@@ -83,7 +88,7 @@
     background-color: inherit;
     border-radius: 4px;
     padding: 0 0 0 16px;
-    min-width: 290px;
+    min-width: 90vw;
   }
 
   &__icon {
@@ -93,83 +98,38 @@
   }
 }
 
-/*.footer {
-  background-color: getColor('bg-color-2');
-  width: 100%;
-  padding: 60px 0;
+/*************** TABLET *************/
 
-  &__box {
-    display: flex;
-    gap: 70px;
+@media screen and (min-width: 768px) {
+  .footer__box {
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
-  &__address {
-    font-size: getFs('small-14');
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: getColor('white');
-    font-style: normal;
-    padding: 20px 0 9px;
-  }
-
-  &__list {
-    padding: 0;
-    margin: 0;
-  }
-  &__item {
-    font-size: getFs('small-14');
-    color: getColor('white-0.6');
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      color: getColor('selection-color');
-      @extend %transition;
-    }
-  }
-  &__title {
-    color: getColor('white');
-    font-weight: getFw('bold-700');
-    font-size: getFs('small-14');
-    text-transform: uppercase;
-    margin-top: 12px;
-    margin-bottom: 20px;
-    letter-spacing: 0.03em;
-  }
-
-  &__icons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
+  .newsletter__input {
+    min-width: 450px;
   }
 }
 
-.newsletter {
-  display: flex;
-  gap: 12px;
+/*************** DESKTOP *************/
 
-  &__input {
-    width: 358px;
-    height: 50px;
-    font-size: getFs('normal-16');
-    line-height: 1.25;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: getColor('white-0.6');
-    border: 1px solid getColor('white-0.3');
-    background-color: inherit;
-    border-radius: 4px;
-    padding-left: 16px;
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    text-align: left;
+  }
+  .footer__list {
+    align-items: flex-start;
+  }
+  .newsletter {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .newsletter__input {
+    min-width: 358px;
   }
 
-  &__icon {
-    fill: getColor('white');
-    width: 24px;
-    height: 24px;
+  .newsletter__sign {
+    flex-direction: row;
+    gap: 12px;
   }
 }
-*/

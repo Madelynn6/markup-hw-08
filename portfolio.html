@@ -47,22 +47,42 @@
           >
         </li>
       </ul>
+      <button class="mobile-icon js-open-menu">
+        <svg width="24" height="16">
+          <use href="./images/icons.svg#menu-icon"></use>
+        </svg>
+      </button>
     </header>
-    </div>
+
     <main>
       <section class="section container">
         <ul class="filter__list">
-          <li><button class=filter__button type="button">Wszystkie</button></li>
-          <li><button class=filter__button type="button">Strony</button></li>
-          <li><button class=filter__button type="button">Aplikacje</button></li>
-          <li><button class=filter__button type="button">Dizajn</button></li>
-          <li><button class=filter__button type="button">Marketing</button></li>
+          <li><button class="filter__button" type="button">Wszystkie</button></li>
+          <li><button class="filter__button" type="button">Strony</button></li>
+          <li><button class="filter__button" type="button">Aplikacje</button></li>
+          <li><button class="filter__button" type="button">Dizajn</button></li>
+          <li><button class="filter__button" type="button">Marketing</button></li>
         </ul>
 
         <ul class="gallery__list">
           <li class="gallery__item">
             <div class="gallery__card">
-              <img src="images/p-img-1.jpg" width="370" height="294" alt="Laptop" />
+              <picture>
+                <source
+                  srcset="images/p-img-1.jpg 1x, images/p-img-1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/t-img-1.jpg 1x, images/t-img-1@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/m-img-1.jpg 1x, images/m-img-1@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="images/m-img-1.jpg" alt="Laptop" />
+              </picture>
+
               <p class="gallery__overlay">
                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                 koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -74,19 +94,47 @@
           </li>
           <li class="gallery__item">
             <div class="gallery__card">
-              <img src="images/p-img-2.jpg" width="370" height="294" alt="Koszykarze" />
+              <picture>
+                <source
+                  srcset="images/p-img-2.jpg 1x, images/p-img-2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/t-img-2.jpg 1x, images/t-img-2@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/m-img-2.jpg 1x, images/m-img-2@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="images/m-img-2.jpg" alt="Koszykówka" />
+              </picture>
               <p class="gallery__overlay">
                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                 koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
                 niezabezpieczone serwery konkurencji
               </p>
             </div>
-            <h3 class="gallery__title">Grafika New Orlean vs Golden Star</h3>
+            <h3 class="gallery__title">New Orlean vs Golden Star</h3>
             <p class="gallery__description">Dizajn</p>
           </li>
           <li class="gallery__item">
             <div class="gallery__card">
-              <img src="images/p-img-3.jpg" width="370" height="294" alt="Seafood Restaurant" />
+              <picture>
+                <source
+                  srcset="images/p-img-3.jpg 1x, images/p-img-3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/t-img-3.jpg 1x, images/t-img-3@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/m-img-3.jpg 1x, images/m-img-3@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="images/m-img-3.jpg" alt="Seafood Restaurant" />
+              </picture>
               <p class="gallery__overlay">
                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                 koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -98,7 +146,21 @@
           </li>
           <li class="gallery__item">
             <div class="gallery__card">
-              <img src="images/p-img-4.jpg" width="370" height="294" alt="Słuchawki" />
+              <picture>
+                <source
+                  srcset="images/p-img-4.jpg 1x, images/p-img-4@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/t-img-4.jpg 1x, images/t-img-4@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/m-img-4.jpg 1x, images/m-img-4@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="images/m-img-4.jpg" alt="Słuchawki" />
+              </picture>
               <p class="gallery__overlay">
                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                 koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -110,7 +172,21 @@
           </li>
           <li class="gallery__item">
             <div class="gallery__card">
-              <img src="images/p-img-5.jpg" width="370" height="294" alt="Pudełka" />
+              <picture>
+                <source
+                  srcset="images/p-img-5.jpg 1x, images/p-img-5@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/t-img-5.jpg 1x, images/t-img-5@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/m-img-5.jpg 1x, images/m-img-5@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="images/m-img-5.jpg" alt="Pudełka" />
+              </picture>
               <p class="gallery__overlay">
                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                 koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -122,7 +198,21 @@
           </li>
           <li class="gallery__item">
             <div class="gallery__card">
-              <img src="images/p-img-6.jpg" width="370" height="294" alt="Komputer" />
+              <picture>
+                <source
+                  srcset="images/p-img-6.jpg 1x, images/p-img-6@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/t-img-6.jpg 1x, images/t-img-6@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/m-img-6.jpg 1x, images/m-img-6@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="images/m-img-6.jpg" alt="Komputer" />
+              </picture>
               <p class="gallery__overlay">
                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                 koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -134,7 +224,21 @@
           </li>
           <li class="gallery__item">
             <div class="gallery__card">
-              <img src="images/p-img-7.jpg" width="370" height="294" alt="Gazeta" />
+              <picture>
+                <source
+                  srcset="images/p-img-7.jpg 1x, images/p-img-7@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/t-img-7.jpg 1x, images/t-img-7@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/m-img-7.jpg 1x, images/m-img-7@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="images/m-img-7.jpg" alt="Gazeta" />
+              </picture>
               <p class="gallery__overlay">
                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                 koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -146,7 +250,21 @@
           </li>
           <li class="gallery__item">
             <div class="gallery__card">
-              <img src="images/p-img-8.jpg" width="370" height="294" alt="Zawieszka" />
+              <picture>
+                <source
+                  srcset="images/p-img-8.jpg 1x, images/p-img-8@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/t-img-8.jpg 1x, images/t-img-8@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/m-img-8.jpg 1x, images/m-img-8@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="images/m-img-8.jpg" alt="Zawieszka" />
+              </picture>
               <p class="gallery__overlay">
                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                 koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -158,7 +276,21 @@
           </li>
           <li class="gallery__item">
             <div class="gallery__card">
-              <img src="images/p-img-9.jpg" width="370" height="294" alt="Laptop" />
+              <picture>
+                <source
+                  srcset="images/p-img-9.jpg 1x, images/p-img-9@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/t-img-9.jpg 1x, images/t-img-9@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/m-img-8.jpg 1x, images/m-img-9@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="images/m-img-9.jpg" alt="Laptop" />
+              </picture>
               <p class="gallery__overlay">
                 Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                 koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -173,8 +305,9 @@
     </main>
     <footer class="footer">
       <div class="container footer__box">
+        <div>
+          <a class="logo" href="index.html">Web<span class="logo--white">Studio</span></a>
           <div>
-            <a class="logo" href="index.html">Web<span class="logo--white">Studio</span></a>
             <address class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</address>
             <ul class="footer__list">
               <li>
@@ -185,64 +318,93 @@
               </li>
             </ul>
           </div>
-          <div>
-            <h4 class="footer__title">dołącz do nas</h4>
-            <div class="footer__icons">
-              <svg class="icons--black">
-                <use
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                  href="./images/icons.svg#icon-instagram-2"
-                ></use>
-              </svg>
-              <svg class="icons--black">
-                <use
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                  href="./images/icons.svg#icon-twitter-1"
-                ></use>
-              </svg>
-              <svg class="icons--black">
-                <use
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                  href="./images/icons.svg#icon-facebook-1"
-                ></use>
-              </svg>
-              <svg class="icons--black">
-                <use
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                  href="./images/icons.svg#icon-linkedin-1"
-                ></use>
-              </svg>
-            </div>
+        </div>
+        <div>
+          <h4 class="footer__title">dołącz do nas</h4>
+          <div class="footer__icons">
+            <svg class="icons--black">
+              <use
+                width="20"
+                height="20"
+                x="12"
+                y="12"
+                href="./images/icons.svg#icon-instagram-2"
+              ></use>
+            </svg>
+            <svg class="icons--black">
+              <use
+                width="20"
+                height="20"
+                x="12"
+                y="12"
+                href="./images/icons.svg#icon-twitter-1"
+              ></use>
+            </svg>
+            <svg class="icons--black">
+              <use
+                width="20"
+                height="20"
+                x="12"
+                y="12"
+                href="./images/icons.svg#icon-facebook-1"
+              ></use>
+            </svg>
+            <svg class="icons--black">
+              <use
+                width="20"
+                height="20"
+                x="12"
+                y="12"
+                href="./images/icons.svg#icon-linkedin-1"
+              ></use>
+            </svg>
           </div>
+        </div>
 
         <div>
           <form>
             <div class="newsletter">
-            <label>
               <h4 class="footer__title">Zapisz się do newslettera</h4>
-            <input type="email" name="email" placeholder="E-mail" class="newsletter__input"></input></label>
-            <button type="submit" class="newsletter__button">
-              Zapisz się
-              <svg class="newsletter__icon">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+              <div class="newsletter__sign">
+                <input type="email" name="email" placeholder="E-mail" class="newsletter__input" />
+                <button type="submit" class="newsletter__button">
+                  Zapisz się
+                  <svg class="newsletter__icon">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </form>
-        </div>    
-  </div>
+        </div>
+      </div>
+    </footer>
 
-  </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div>
+        <button class="menu-toggle js-close-menu">
+          <svg width="18.67" height="18.67"><use href="./images/icons.svg#close-icon"></use></svg>
+        </button>
+        <ul class="menu__nav">
+          <li><a class="menu__item" href="./index.html">Agencja</a></li>
+          <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="menu__item" href="./kontakt.html">Kontakt</a></li>
+        </ul>
+
+        <ul class="menu__contact">
+          <li><a class="menu__tel" href="tel:+48111111111">+48 111 111 111</a></li>
+          <li><a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+
+        <ul class="menu__social">
+          <li class="menu__social-item"><a class="menu__social-link" href="">Instagram</a></li>
+          <li class="menu__social-item"><a class="menu__social-link" href="">Twitter</a></li>
+          <li class="menu__social-item"><a class="menu__social-link" href="">Facebook</a></li>
+          <li class="menu__social-item"><a class="menu__social-link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
